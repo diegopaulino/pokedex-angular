@@ -23,7 +23,7 @@ export class DetailsComponent implements OnInit {
     private pokeApiService: PokeApiService
   ) {}
   ngOnInit(): void {
-    this.getPokemon;
+    this.getPokemon();
   }
 
   public getPokemon() {
@@ -43,7 +43,5 @@ export class DetailsComponent implements OnInit {
         this.apiError = true;
       },
     });
-
-    return console.log(id);
   }
 }
